@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publish New Event in KSU</title>
+    <link rel="stylesheet" type="text/css" href="css/view.css" media="all">
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <section class="banner" role="banner">
+        <!-- Navigation Section -->
+        <header id="header">
+            <div class="header-content clearfix">
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html " >Home</a></li>
+                    </ul>
+                </nav>
+          
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <!-- Banner Section -->
+        <div class="container">
+            <div class="col-md-7 banner-inner-wrapper">
+                <div class="banner-text">
+                    <h1>Publish New Event in KSU</h1>
+                    
+                </div>
+                <!-- banner text -->
+            </div>
+        </div>
+        <!-- Banner Section -->
+    </section>
+    <!-- Header Section -->
+
+
+    <section id="main_body">
+
+     
+        <div id="form_container">
+
+            
+            <form id="form_7547" class="appnitro" method="GET" action="result.html">
+    
+                <ul>
+
+                    <li id="li_1">
+                        <label class="description" for="element_1">Name </label>
+                        <div>
+                            <input id="element_1" name="element_1" class="element text large" type="text" maxlength="255" value="" />
+                       
+                        </div>
+                    </li>
+                    <li id="li_2">
+                        <label class="description" for="element_2">Description </label>
+                        <div>
+                            <textarea id="element_2" name="element_2" class="element textarea medium"></textarea>
+                        </div>
+                    </li>
+                    <li id="li_4">
+                        <label class="description" for="element_4">
+                            College
+                        </label>
+                        <div>
+                            <select class="element select large" id="element_4" name="element_4">
+                                <option value="" selected="selected"></option>
+                                <option value="Computer and Information Sciences">Computer and Information Sciences</option>
+                                <option value="Sciences">Sciences</option>
+                                <option value="Business Administration">Business Administration</option>
+                                <option value="Architecture and Planning">Architecture and Planning</option>
+                                <option value="Food and Agricultural Sciences">Food and Agricultural Sciences</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Nursing">Nursing</option>
+                                <option value="Applied Medical Science">Applied Medical Science</option>
+                                <option value="Pharmacy">Pharmacy</option>
+                                <option value="Dentistry">Dentistry</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Sport Science">Sport Science</option>
+                                <option value="Tourism & Antiquities">Tourism & Antiquities</option>
+                                <option value="Languages & Translation">Languages & Translation</option>
+                                <option value="Law and Political Science">Law and Political Science</option>
+                                <option value="Education">Education</option>
+                                <option value="Arts">Arts</option>
+
+                            </select>
+                        </div>
+                    </li>
+                    <li id="li_3">
+                        <label class="description" for="element_3">Date </label>
+                        <span>
+                            <input id="element_3_1" name="element_3_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+                            <label for="element_3_1">DD</label>
+                        </span>
+                        <span>
+                            <input id="element_3_2" name="element_3_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+                            <label for="element_3_2">MM</label>
+                        </span>
+                        <span>
+                            <input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
+                            <label for="element_3_3">YYYY</label>
+                        </span>
+
+                        <span id="calendar_3">
+                            <img id="cal_img_3" class="datepicker" src="images/calendar.gif" alt="Pick a date.">
+                        </span>
+                        <script type="text/javascript">
+			Calendar.setup({
+			inputField	 : "element_3_3",
+			baseField    : "element_3",
+			displayArea  : "calendar_3",
+			button		 : "cal_img_3",
+			ifFormat	 : "%B %e, %Y",
+			onSelect	 : selectEuropeDate
+			});
+                        </script>
+
+                    </li>
+                    <li id="li_7">
+                        <label class="description" for="element_7">Time </label>
+                        <span>
+                            <input id="element_7_1" name="element_7_1" class="element text " size="2" type="text" maxlength="2" value="" /> :
+                            <label>HH</label>
+                        </span>
+                        <span>
+                            <input id="element_7_2" name="element_7_2" class="element text " size="2" type="text" maxlength="2" value="" /> :
+                            <label>MM</label>
+                        </span>
+
+                        <span>
+                            <select class="element select" style="width:4em" id="element_7_4" name="element_7_4">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                            <label>AM/PM</label>
+                        </span>
+                    </li>
+                    <li id="li_5">
+                        <label class="description" for="element_5">The event for </label>
+                        <span>
+                            <input id="element_5_2" name="element_5_2" class="element checkbox" type="checkbox" value="Students" />
+                            <label class="choice" for="element_5_2">Students</label>
+                            <input id="element_5_3" name="element_5_3" class="element checkbox" type="checkbox" value="Staffs" />
+                            <label class="choice" for="element_5_3">Staffs</label>
+
+                        </span>
+                    </li>
+                    <li id="li_6">
+                        <label class="description" for="element_6">Gender </label>
+                        <span>
+                            <input id="element_6_1" name="element_6" class="element radio" type="radio" value="Female" />
+                            <label class="choice" for="element_6_1">Female</label>
+                            <input id="element_6_2" name="element_6" class="element radio" type="radio" value="Male" />
+                            <label class="choice" for="element_6_2">Male</label>
+
+                        </span>
+                    </li>
+
+                    <li class="buttons">
+                        <input type="hidden" name="form_id" value="7547" />
+
+                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+        
+
+
+    </section>
+
+
+
+ 
+</body>
+</html>

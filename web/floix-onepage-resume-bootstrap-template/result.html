@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title></title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="banner" role="banner">
+        <!-- Navigation Section -->
+        <header id="header">
+            <div class="header-content clearfix">
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html ">Home</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <!-- Banner Section -->
+        <div class="container">
+            <div class="col-md-7 banner-inner-wrapper">
+                <div class="banner-text">
+                    <h1>Your events</h1>
+                  
+                </div>
+                <!-- banner text -->
+            </div>
+        </div>
+        <!-- Banner Section -->
+    </section>
+    <!-- Header Section -->
+    <table align="center">
+ 
+        <tr >
+            <td> event name:</td>
+            <td id="name"></td>  
+
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td id="Description" width="90%"></td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td id="College"></td>
+        </tr>
+        <tr>
+           
+
+            <td>date</td>
+            <td >
+                <p id="DD" style="display:inline"> </p>
+                <p  style="display:inline"> \ </p>
+                <p id="MM" style="display:inline"> </p>
+                <p style="display:inline"> \ </p>
+                <p id="YYY"style="display:inline"> </p>
+            </td>
+   
+        </tr>
+        <tr>
+            <td>time</td>
+            <td>
+                <p id="hh" style="display:inline"> </p>
+                <p style="display:inline"> : </p>
+                <p id="m" style="display:inline"> </p>
+                <p id="am_pm" style="display:inline"> </p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>the event for</td>
+            <td>
+                <p id="student"></p>
+                <p id="staff"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td id="gender"></td>
+        </tr>
+  
+    </table>
+ 
+    <br><br><br><br><br>
+
+  <script>
+      function getParameterByName(name) {
+           url = window.location.href;
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      
+
+  </script>
+    <script>
+        var name = getParameterByName("element_1");
+        var Description = getParameterByName("element_2");
+        var College = getParameterByName("element_4");
+        var DD = getParameterByName("element_3_1");
+        var MM = getParameterByName("element_3_2");
+        var YYY = getParameterByName("element_3_3");
+        var hh = getParameterByName("element_7_1");
+        var m = getParameterByName("element_7_2");
+        var am_pm= getParameterByName("element_7_4");
+        var student = getParameterByName("element_5_2");
+        var staff = getParameterByName("element_5_3");
+        var gender = getParameterByName("element_6");
+
+
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("Description").innerHTML = Description;
+        document.getElementById("College").innerHTML = College;
+        document.getElementById("DD").innerHTML = DD;
+        document.getElementById("MM").innerHTML = MM; 
+        document.getElementById("YYY").innerHTML = YYY; 
+        document.getElementById("hh").innerHTML = hh; 
+        document.getElementById("m").innerHTML = m; 
+        document.getElementById("YYY").innerHTML = YYY;
+        document.getElementById("am_pm").innerHTML = am_pm;
+        document.getElementById("student").innerHTML = student;
+        document.getElementById("staff").innerHTML = staff;
+        document.getElementById("gender").innerHTML = gender;
+    </script>
+   
+</body>
+</html>
